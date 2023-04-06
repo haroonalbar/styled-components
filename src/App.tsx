@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Container } from './components/styled/Container.styled'
 import Header from './components/Header'
 import { ThemeProvider } from 'styled-components'
+import GlobalStyles from './components/styled/Global'
 import { StyledHeader } from './components/styled/Header.styled'
 
 const theme={
@@ -18,6 +19,7 @@ function App() {
   return (
     <ThemeProvider theme= {theme}>
     <>
+    <GlobalStyles/>
       {/* <StyledHeader bg='red'>
         <h1>Hello</h1>
       </StyledHeader> */}
