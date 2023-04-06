@@ -5,6 +5,6 @@ type StyledHeaderProps={
 }
 
 export const StyledHeader = styled.header<StyledHeaderProps>`
-background-color: ${({bg}) => bg};
+background-color: ${({theme}) => theme.color.header};
 padding: 40px 0;
 `
